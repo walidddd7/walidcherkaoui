@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Main</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
+
+
+
+    </div>
+    <div class="contact-container">
+        <h1><span class='one'>c</span><span class='two'>o</span><span class='three'>n</span><span class='four'>t</span><span class='five'>a</span><span class='six'>c</span><span class='six'>t</span></h1>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>+971 50 578 4289</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>walidcherkaoui10@email.com</span>
+            </div>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/+971505784289" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+        </a>
+    </div>
+<style>
+body {
+    background-image: url('2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the image cover the whole screen */
+    background-position: center center; /* Center the image */
+    background-repeat: repeat; /* Ensure the image doesn't repeat */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margins */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex; /* Use Flexbox */
+}
+h1 {
+    margin: 0;
+    padding-top: 3rem;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-family: 'Teko', sans-serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+    color: #cac8c8;
+    
+  }
+  a {
+    font-family: 'Teko', sans-serif;
+    color: #440f41;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    padding-bottom: 1rem;
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #8a1d68;
+    }
+    to {
+      text-shadow: 0 0 30px #97183a, 0 0 10px #c42990;
+    }
+  }
+
+ /* Navigation Bar Styles */
+ .navbar {
+            position:fixed ;
+            top: 20px;
+            right: 20px;
+            background-color: transparent; /* No background */
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem; /* Smaller font size */
+            padding: 5px 10px; /* Adjusted padding for a smaller look */
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ccc; /* Slightly lighter text on hover */
+        }
+
+        /* Lines between the links */
+        .navbar a:not(:last-child)::after {
+            content: '|'; /* Vertical line */
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+  /* Style for the About Me text */
+
+/* Contact Page Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading styling */
+.contact-container h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Information */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;color: white;
+    gap: 20px;
+}
+
+.contact-item {
+    font-size:2rem;
+    display: flex;
+    align-items: center; color: white;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #4CAF50;  /* Green color for the icons */
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366; /* WhatsApp Green */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+    position: relative; /* Ensure it can be moved relative to its current position */
+    left: -80px; /* Moves the button 10px to the lef
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Darker green on hover */
+}
+
+.whatsapp-button i {
+    margin-right: 10px; 
+}
+
+
+
+
+
+</style>
+</body>
+</html>

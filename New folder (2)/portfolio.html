@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+      <!-- Heading Section -->
+   
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Main</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+  <BR>
+    <!-- Portfolio Section -->
+   <br> <div class="portfolio-container">
+        <!-- First project -->
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="3.jpeg" alt="Project 1">
+            </div>
+            <div class="portfolio-text">
+                <h2>Project 1</h2>
+                <p>For this project, I implemented a targeted digital marketing strategy <BR>
+                    to help a growing business expand its reach and attract new clients.<BR>
+                     I designed and developed a responsive website optimized for user<BR>
+                      experience and SEO. Additionally, I created compelling multimedia<BR>
+                       content, including photos and videos, to enhance the company’s<BR>
+                        brand presence across digital platforms. By leveraging data-driven<BR>
+                         marketing techniques and running targeted ad campaigns, I contributed<BR>
+                          to a significant increase in customer engagement and overall business 
+                          growth.
+
+                </p>
+            </div>
+        </div>
+</div>    <!-- Second project -->
+<div class="portfolio-item">
+    <div class="portfolio-image">
+        <img src="4.jpeg" alt="Project 2">
+    </div>
+    <div class="portfolio-text">
+        <h2>Project 2</h2>
+        <p>In this project, I focused on building a strong brand identity for<BR>
+             a company seeking to enhance its market position. This involved <BR>
+             designing a cohesive digital strategy that included a professional<BR>
+             website, high-quality visual content, and engaging social media posts<BR>
+              tailored to the target audience. By conducting market research and<BR>
+               employing audience-specific marketing techniques, I successfully<BR>
+                increased brand recognition, improved customer retention, <BR>
+                and drove consistent growth in sales and engagement metrics.</p>
+    </div>
+</div>
+</div>
+<style>body {
+    background-image: url('2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the image cover the whole screen */
+    background-position: center center; /* Center the image */
+    background-repeat: repeat; /* Ensure the image doesn't repeat */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margins */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    display: flex; /* Use Flexbox */
+}
+
+/* Heading Style */
+.portfolio-heading {
+    text-align: center;
+    margin-top: 50px;  /* Adds space from the top of the page */
+    margin-bottom: 30px;  /* Adds space below the heading */
+}
+
+.portfolio-heading h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* Portfolio Container */
+/* Portfolio Container - Centering the content */
+.portfolio-container {
+    display: flex;
+    flex-direction: column; /* Stack the portfolio items vertically */
+    justify-content: center; /* Align items in the center vertically */
+    align-items: center; /* Align items in the center horizontally */
+    margin: 0 auto;
+    max-width: 1200px; /* Max width for the content */
+    padding: 0 20px;
+    min-height: 100vh; /* Ensure it takes the full height of the screen */
+}
+
+/* Portfolio Item - Add space between items */
+.portfolio-item {
+    display: block;
+    margin-bottom: 40px;  /* Space between the items */
+    text-align: center; /* Center the text inside the portfolio item */
+}
+
+/* Image Styling */
+.portfolio-image img {
+    width: 85%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;  /* Ensure the image is centered */
+    border-radius: 10px;
+}
+
+/* Text Styling */
+.portfolio-text {
+    margin-top: 20px;
+    color: white;
+}
+
+.portfolio-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.portfolio-text p {
+    font-size: 0.8rem;
+    line-height: 1.6;color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 10px;
+    }
+   
+    .navbar {
+        top: 10px; /* Adjust the top position */
+        right: 10px; /* Adjust the right position */
+        gap: 15px; /* Less space between links */
+    }
+
+    .navbar a {
+        font-size: 0.9rem; /* Slightly smaller font size for mobile */
+        padding: 4px 8px; /* Smaller padding for mobile */
+    }
+    
+    .navbar a:not(:last-child)::after {
+        margin-left: 15px; /* Adjust line spacing for mobile */
+    }
+    .portfolio-item img {
+        max-width: 90%; /* Scale images down for smaller screens */        height: auto;   /* Keep aspect ratio */
+        height: auto;   /* Keep aspect ratio */
+        margin-top:150px;
+    }
+}
+
+.navbar {
+            position:fixed ;
+            top: 20px;
+            right: 20px;
+            background-color: transparent; /* No background */
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            
+            text-decoration: none;
+            font-size: 0.8rem; /* Smaller font size */
+            padding: 5px 10px; /* Adjusted padding for a smaller look */
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ccc; /* Slightly lighter text on hover */
+        }
+
+        /* Lines between the links */
+        .navbar a:not(:last-child)::after {
+            content: '|'; /* Vertical line */
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+</style>
+</body>
+</html>

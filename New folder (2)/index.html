@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+             overflow: hidden; 
+            padding: 0;
+            background-color: black; /* Black background */
+            color: white; /* White text */
+            font-family: Arial, sans-serif;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Centers the content */
+            align-items: center; /* Centers the content vertically */
+        }
+
+        /* Navigation Bar Styles */
+        .navbar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: transparent; /* No background */
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem; /* Smaller font size */
+            padding: 5px 10px; /* Adjusted padding for a smaller look */
+            transition: color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #ccc; /* Slightly lighter text on hover */
+        }
+
+        /* Lines between the links */
+        .navbar a:not(:last-child)::after {
+            content: '|'; /* Vertical line */
+            margin-left: 20px;
+            color: #ccc;
+        }
+
+        /* Content Styles */
+        .container {
+            display: flex;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            justify-content: space-between; /* Create space between the left and right sections */
+            align-items: center; /* Vertically center the content */
+            margin-top: 40px; /* Adjust space for the navbar */
+        }
+
+        .left {
+            flex: 1; /* Take up equal space on the left */
+            display: flex;
+            justify-content: center; /* Center image horizontally */
+            align-items: center; /* Center image vertically */
+        }
+
+        .left img {
+            width: 600px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .right {
+            flex: 1; /* Take up equal space on the right */
+            display: flex;
+            justify-content: center; /* Center text horizontally */
+            align-items: center; /* Center text vertically */
+            text-align: center; /* Ensure the text is centered */
+            margin-left: -20px;
+        }
+
+        .right h1 {
+            font-size: 3rem; /* Big text for the name */
+            margin: 0;
+        }
+
+        .right p {
+            font-size: 1rem; /* Smaller paragraph text */
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+       
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack the image and text vertically */
+                justify-content: center; /* Center vertically */
+                align-items: center; /* Center horizontally */
+                height: auto; /* Allow height to adjust */
+                margin-top: 20px; /* Adjust space for smaller screens */
+                width: 200px;
+            }
+
+            @media (max-width: 768px) {
+    .navbar {
+        top: 10px; /* Adjust the top position */
+        right: 10px; /* Adjust the right position */
+        gap: 15px; /* Less space between links */
+    }
+
+    .navbar a {
+        font-size: 0.9rem; /* Slightly smaller font size for mobile */
+        padding: 4px 8px; /* Smaller padding for mobile */
+    }
+    
+    .navbar a:not(:last-child)::after {
+        margin-left: 15px; /* Adjust line spacing for mobile */
+    }
+}
+            .left, .right {
+                flex: 0; /* Make them not take up equal space */
+                width: 80%; /* Make them take up 80% of the screen width */
+            }
+
+            .left img {
+                width: 200px; /* Adjust image size on smaller screens */
+                height: auto;
+                margin-left: -20px;
+            }
+
+            .right h1 {
+                font-size: 2rem; /* Smaller font size for name */
+            }
+
+            .right p {
+                font-size: 0.7rem; /* Smaller paragraph text */
+            }
+        }
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Main</a>
+         <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container" id="main">
+        <div class="left">
+            <img src="1.jpg" alt="Your Picture">
+        </div> <br>
+        <div class="right">
+            <div>
+                <h1><B>WALID CHERKAOUI</B></h1>
+                <p>
+                    I am a results-driven marketing professional passionate about helping businesses grow through strategic planning and creative solutions. With a strong background in digital marketing, website development, and content creation, I specialize in crafting impactful campaigns that resonate with audiences and achieve tangible results. My approach combines technical expertise with a deep understanding of market trends, ensuring every project is executed with precision and innovation.                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
